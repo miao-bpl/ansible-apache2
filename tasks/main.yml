@@ -21,5 +21,5 @@
 
 - name: Delete default web root
   file: path=/var/www/html state=absent
-  when: apache_delete_default_site | bool and a2dissite | changed
+#  when: apache_delete_default_site | bool and a2dissite | changed
   ignore_errors: True
